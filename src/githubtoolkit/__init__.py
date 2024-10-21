@@ -39,7 +39,7 @@ def upload_content_to_github(content: str, file_path: str, repo: str, token: str
     print(f"Successfully uploaded content to {repo}/{branch}/{file_path}")
 
 
-def upload_file_to_github(file: str, repo: str, token: str, branch: str, alias: str = "", comment: str = ""):
+def upload_file_to_github(file: str, repo: str, token: str, branch: str = "main", alias: str = "", comment: str = ""):
     """
     Uploads given file to GitHub repository repo.
     Comments in branch branch and uses token token.
@@ -59,7 +59,7 @@ def upload_file_to_github(file: str, repo: str, token: str, branch: str, alias: 
     upload_content_to_github(content, alias, repo, token, branch, comment)
 
 def about():
-    return {"version": "1.0.0", "author": "Leander Kafemann", "date": "21.10.2024"}
+    return {"version": "1.0.1", "author": "Leander Kafemann", "date": "21.10.2024"}
 
 def main():
     file_path = input("Enter path (C:/Users/abc/def.ghi or ./def.ghi): ")
