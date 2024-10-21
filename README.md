@@ -2,9 +2,11 @@
 ## Installation
 ### Using <code>pip</code>
 You can install githubtoolkit via pip using
-<li><code>py -m pip install githubtoolkit</code> in a commandline</li><br/>
-<li>
-```
+<li>in a commandline:</li><br/>
+<code>py -m pip install githubtoolkit</code><br/>
+<li>in a python script:</li><br/>
+
+```python
 import os
 os.system('py -m pip install githubtoolkit')
 ```
