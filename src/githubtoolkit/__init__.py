@@ -59,9 +59,15 @@ def upload_file_to_github(file: str, repo: str, token: str, branch: str = "main"
     upload_content_to_github(content, alias, repo, token, branch, comment)
 
 def about():
-    return {"version": "1.0.1", "author": "Leander Kafemann", "date": "21.10.2024"}
+    """
+    Return information about your release.
+    """
+    return {"version": "1.0.2", "author": "Leander Kafemann", "date": "22.10.2024", "feedbackTo": "leander@kafemann.berlin"}
 
 def main():
+    """
+    Calls main functions with given data.
+    """
     file_path = input("Enter path (C:/Users/abc/def.ghi or ./def.ghi): ")
     repo = input("Enter repository (Abc/def): ")
     token = input("Enter token: ")
